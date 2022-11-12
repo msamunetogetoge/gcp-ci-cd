@@ -45,7 +45,8 @@ jobs:
       - checkout
       - cloudrun/init # 何か必要かも
       - cloudrun/deploy:
-          service-name: "circlecitest"
+          platform: managed
+          service-name: circlecitest
           region: us-east1
           unauthenticated: true
 
