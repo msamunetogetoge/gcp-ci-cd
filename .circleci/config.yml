@@ -43,7 +43,7 @@ jobs:
       - image: "cimg/base:stable"
     steps:
       - checkout
-      - cloudrun/init
+      - cloudrun/init # 何か必要かも
       - cloudrun/deploy:
           service-name: "circlecitest"
 # Invoke jobs via workflows
