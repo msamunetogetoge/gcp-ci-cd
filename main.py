@@ -11,6 +11,11 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
+    """_summary_
+
+    Returns:
+        _type_: _description_
+    """
     name = os.environ.get("NAME", "World")
     return "Hello {}!".format(name)
 
