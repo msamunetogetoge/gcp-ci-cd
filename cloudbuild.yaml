@@ -1,4 +1,12 @@
 steps:
+  # Install dependencies
+  - name: python
+    entrypoint: pip
+    args: ["install", "-r", "requirements.txt", "--user"]
+  # Run unit tests
+  - name: python
+    entrypoint: python
+    args: ["-m", "unittest"]
   - name: "gcr.io/cloud-builders/docker"
     args:
       [
