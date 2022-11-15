@@ -11,5 +11,8 @@ class TestStringMethods(unittest.TestCase):
     def test_add_int_and_str(self):
         with self.assertRaises(TypeError):
             add_two_number(1,"1")
-    
+
+    def test_add_int_and_bool(self):
+        with self.assertRaises(TypeError):
+            add_two_number(1,True)    
     
