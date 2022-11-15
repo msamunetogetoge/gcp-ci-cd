@@ -12,3 +12,4 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(TypeError):
             add_two_number(1,"1")
     
+    
