@@ -8,5 +8,5 @@ class TestStringMethods(unittest.TestCase):
             add_two_number(1,0.1)
     def test_add_int_and_str(self):
         with self.assertRaises(TypeError):
-            add_two_number(1,1)
+            add_two_number(1,"1")
     
