@@ -7,3 +7,6 @@ class TestStringMethods(unittest.TestCase):
         with self.assertRaises(TypeError):
             add_two_number(1,0.1)
     
+    def test_add_int_and_str(self):
+        self.assertEqual(5, add_two_number("2",3))
+    
