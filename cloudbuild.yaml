@@ -1,20 +1,4 @@
 steps:
-  # Install dependencies
-  - name: python
-    entrypoint: pip
-    args: ["install", "-r", "requirements.txt", "--user"]
-  # Run unit tests
-  - name: python
-    entrypoint: python
-    args: ["-m", "unittest"]
-  - name: "gcr.io/cloud-builders/docker"
-    args:
-      [
-        "build",
-        "-t",
-        "us-west2-docker.pkg.dev/${PROJECT_ID}/circleci-gcp/test-image:tag1",
-        ".",
-      ]
   - name: "gcr.io/cloud-builders/docker"
     args:
       [
